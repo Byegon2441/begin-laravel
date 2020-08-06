@@ -34,3 +34,13 @@ Route::get('inputname/{name}','InputController@inputName');
 Route::get('showproduct/{prouct}','InputController@showProduct');
 
 Route::get('show','HelloController@show');// user . to acces inside floder
+
+
+Route::get('/home', function () {
+    return view('home');
+});
+
+
+Route::get('/detail', function () {
+    return view('detail');
+});
