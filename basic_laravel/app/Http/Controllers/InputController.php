@@ -11,7 +11,8 @@ class InputController extends Controller
     }//inputName
 
     function showProduct($product){
-        echo "<script>alert('Show : '+ '$product')</script>";
+       // echo "<script>alert('Show : '+ '$product')</script>";
+       phpinfo();
     }
 }
 

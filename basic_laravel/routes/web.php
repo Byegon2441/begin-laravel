@@ -17,8 +17,9 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/user',function (){
-    return '<h1>User : Patthapong</h1>';
+Route::get('/user',function (){//callback function
+    return '<h1>User : Patthapong</h1>';//return text
+    //เมื่อมาที่pathนี้จะreturn เป็น text ว่า User : Patthapong
 });
 
 Route::get('/showname',function(){
@@ -26,7 +27,7 @@ Route::get('/showname',function(){
 });
 
 Route::get('welcome/name','HelloController@showHello');
-//การเชื่อม route กับ Controller 
+//การเชื่อม route กับ Controller
 // ระบุ ชื่อ Controller @ ชื่อ function ใน controller แทน  callback function
 
 
@@ -44,3 +45,15 @@ Route::get('/home', function () {
 Route::get('/detail', function () {
     return view('detail');
 });
+
+Route::get('users/{num1}/{num2}', function ($num1,$num2) {//ใน { } คือ parameter 
+    return $num1+$num2;
+});
+
+
+Route::get('/pd', function () {
+    return view('create.product'); //กรณี view อยู่ในโฟลเดอร์ 
+                                  // folder.view
+});
+
+Route::get('/product','ProductController@con');
