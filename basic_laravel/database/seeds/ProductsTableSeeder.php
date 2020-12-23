@@ -1,8 +1,8 @@
 <?php
 
 use Illuminate\Database\Seeder;
-use Illuminate\Support\Facades\App;
-
+//use Illuminate\Support\Facades\App; // อย่าไปใส่ มาจากไหนก็ไม่รุ้
+use App\Product;
 class ProductsTableSeeder extends Seeder
 {
     /**

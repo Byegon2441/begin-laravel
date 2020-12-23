@@ -11,7 +11,7 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-         //$this->call(UserSeeder::class);
+         //$this->call(MemberSeeder::class);
          $this->call(ProductsTableSeeder::class);
          //ถ้ามีหลายตารางให้ทำเป็น array
          

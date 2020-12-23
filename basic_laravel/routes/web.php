@@ -17,10 +17,10 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/user',function (){//callback function
-    return '<h1>User : Patthapong</h1>';//return text
-    //เมื่อมาที่pathนี้จะreturn เป็น text ว่า User : Patthapong
-});
+// Route::get('/user',function (){//callback function
+//     return '<h1>User : Patthapong</h1>';//return text
+//     //เมื่อมาที่pathนี้จะreturn เป็น text ว่า User : Patthapong
+// });
 
 Route::get('/showname',function(){
     return '<b>Patthapong Naimkerd</b>';
@@ -57,3 +57,7 @@ Route::get('/pd', function () {
 });
 
 Route::get('/product','ProductController@con');
+
+
+
+Route::resource('user', 'UserController');
